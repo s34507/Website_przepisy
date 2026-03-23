@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przepisy</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 768px)">
+</head>
+<body class="strona-przepisy">
+  <div class="header">
+    <h1>STUDENCKIE PRZEPISY</h1>
+    <p>Zdrowo, smacznie, tanio...</p>
+  </div>
+
+  <div class="navbar">
+    <a href="website.html">O mnie</a>
+    <a href="przepisy.html">Przepisy</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+  <!-- Śniadania -->
+  <div class="sekcja">
+    <h2 class="sekcja-tytul">Śniadania</h2>
+    <div class="karuzela-wrapper">
+      <button class="strzalka" id="lewo-sniadania">◀</button>
+      <div class="karuzela" id="karuzela-sniadania">
+        <div class="przepis">
+          <img src="omlet.jpg" alt="Śniadanie 1">
+          <h3>Omlet warzywny</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Omlet z papryką, pomidorami i ziołami. Idealny na dobry początek dnia!</p>
+            <ul>
+              <li>2 jajka</li>
+              <li>1/2 papryki</li>
+              <li>1 pomidor</li>
+              <li>Zioła</li>
+            </ul>
+          </div>
+        </div>
+        <div class="przepis">
+          <img src="toast.jpg" alt="Śniadanie 2">
+          <h3>Tost z awokado</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Kremowe awokado z cytryną i pieprzem na pełnoziarnistym pieczywie.</p>
+            <ul>
+              <li>1 awokado</li>
+              <li>1/2 cytryny</li>
+              <li>Sól i pieprz</li>
+              <li>2 kromki chleba</li>
+            </ul>
+          </div>
+        </div>
+        <div class="przepis">
+          <img src="pancake.jpg" alt="Śniadanie 3">
+          <h3>Placuszki bananowe</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Szybkie i słodkie śniadanie bez cukru z bananów i jajek.</p>
+            <ul>
+              <li>1 banan</li>
+              <li>1 jajko</li>
+              <li>1 łyżka mąki</li>
+              <li>Olej do smażenia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="strzalka" id="prawo-sniadania">▶</button>
+    </div>
+  </div>
+
+  <!-- Smoothie -->
+  <div class="sekcja">
+    <h2 class="sekcja-tytul">Smoothie</h2>
+    <div class="karuzela-wrapper">
+      <button class="strzalka" id="lewo-smoothie">◀</button>
+      <div class="karuzela" id="karuzela-smoothie">
+        <div class="przepis">
+          <img src="green_smoothie.jpg" alt="Smoothie 1">
+          <h3>Zielone smoothie</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Oczyszczający napój z jarmużu, jabłka i cytryny.</p>
+            <ul>
+              <li>Garść jarmużu</li>
+              <li>1 jabłko</li>
+              <li>Sok z 1/2 cytryny</li>
+              <li>Woda</li>
+            </ul>
+          </div>
+        </div>
+        <div class="przepis">
+          <img src="berry_smoothie.jpg" alt="Smoothie 2">
+          <h3>Smoothie jagodowe</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Orzeźwiający miks z jagód i banana na mleku roślinnym.</p>
+            <ul>
+              <li>1 banan</li>
+              <li>1/2 szklanki jagód</li>
+              <li>1 szklanka mleka roślinnego</li>
+            </ul>
+          </div>
+        </div>
+        <div class="przepis">
+          <img src="smoothie_tropical.jpg" alt="Smoothie 3">
+          <h3>Tropikalne smoothie</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Egzotyczny smak mango i ananasa z nutą kokosa.</p>
+            <ul>
+              <li>1/2 mango</li>
+              <li>1/2 szklanki ananasa</li>
+              <li>Mleczko kokosowe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="strzalka" id="prawo-smoothie">▶</button>
+    </div>
+  </div>
+
+  <!-- Przekąski -->
+  <div class="sekcja">
+    <h2 class="sekcja-tytul">Przekąski</h2>
+    <div class="karuzela-wrapper">
+      <button class="strzalka" id="lewo-przekaski">◀</button>
+      <div class="karuzela" id="karuzela-przekaski">
+        <div class="przepis">
+          <img src="hummus.jpg" alt="Przekąska 1">
+          <h3>Hummus z warzywami</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Kremowy hummus podawany z marchewką i ogórkiem.</p>
+            <ul>
+              <li>1/2 puszki ciecierzycy</li>
+              <li>1 łyżka tahini</li>
+              <li>Sok z cytryny</li>
+              <li>Marchew, ogórek</li>
+            </ul>
+          </div>
+        </div>
+        <div class="przepis">
+          <img src="powerballs.jpg" alt="Przekąska 2">
+          <h3>Kulki mocy</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Naturalne słodkości z daktyli, kakao i płatków owsianych.</p>
+            <ul>
+              <li>5 daktyli</li>
+              <li>1 łyżka kakao</li>
+              <li>3 łyżki płatków owsianych</li>
+            </ul>
+          </div>
+        </div>
+        <div class="przepis">
+          <img src="peppers.jpg" alt="Przekąska 3">
+          <h3>Mini papryczki</h3>
+          <button onclick="toggleOpis(this)">Pokaż opis</button>
+          <div class="opis">
+            <p>Papryczki faszerowane pastą z białego sera i ziół.</p>
+            <ul>
+              <li>Mini papryki</li>
+              <li>2 łyżki twarożku</li>
+              <li>Zioła</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="strzalka" id="prawo-przekaski">▶</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Studenckie przepisy
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
